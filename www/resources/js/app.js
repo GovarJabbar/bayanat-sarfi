@@ -40,7 +40,7 @@ const app = new Vue({
                     this.selected_data = res.data.sarf[0]
                     setTimeout(() => {
                         $('#words')[0].selectedIndex = 0;
-                    }, 500);
+                    }, 200);
                 })
         },
 

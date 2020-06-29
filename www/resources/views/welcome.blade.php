@@ -111,7 +111,7 @@
             <div class="modal-body" style="min-height: 150px;line-height:2.5; ">
                 قاعدة بيانات الميزان الصرفي <br>
                 إعداد: گۆڤار جبار ممند<br>
-                شکلا لـ: (حوسبة) محمد يوسف ملكاوي<br>
+                شکرا لـ: (حوسبة) محمد يوسف ملكاوي<br>
                 <img style=" height: 150px; position: absolute; left: 0; top: 0; " src="logo.png"/>
             </div>
             <div class="modal-footer">
