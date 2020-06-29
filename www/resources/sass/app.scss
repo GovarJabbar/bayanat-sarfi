@@ -1,0 +1,31 @@
+body {
+    background: #efefef69 !important;
+    margin: 25px !important;
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+* {
+    font-family: Droid Arabic Naskh !important;
+    text-align: right !important;
+}
+
+::-webkit-scrollbar {
+    display: none!important;
+}
+
+textarea {
+    line-height: 2.3 !important;
+    font-size: 15px !important;
+    max-height: 90px !important;
+    min-height: 90px !important;
+    background: #fff !important;
+}
+
+.active.item {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
