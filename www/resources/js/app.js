@@ -15,7 +15,6 @@ const app = new Vue({
         }
     },
     mounted() {
-        $('#words')[0].selectedIndex = 0;
         $('#ayah')[0].selectedIndex = 0;
         this.getAyas('#surah');
     },
@@ -32,7 +31,6 @@ const app = new Vue({
         getWords() {
             let surah = $('#surah').val();
             let ayah = $('#ayah').val();
-            $('#words')[0].selectedIndex = 0;
 
             axios.get(`api/get_ayah/${surah}/${ayah}`)
                 .then((res) => {
@@ -40,6 +38,7 @@ const app = new Vue({
                     this.ayah_no = res.data.ayah[0].ayah_text_no_diacratic
                     this.word_list = res.data.sarf
                     this.selected_data = res.data.sarf[0]
+                    $('#words')[0].selectedIndex = 0;
                 })
         },
 
@@ -47,5 +46,6 @@ const app = new Vue({
             this.selected_data = this.word_list.find(a => a.id == parseInt(item.value))
         },
 
-    }
+    },
+
 });

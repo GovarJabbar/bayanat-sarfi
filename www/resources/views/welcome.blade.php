@@ -41,7 +41,7 @@
             <div class="col-4">
                 <div class="ui vertical basic buttons" style=" width: 250px; " @change="selected($event.target)">
                     <select id="words" class="form-control" size="6" style=" max-height: 154px; min-height: 154px; ">
-                        <option v-for="(item,i) in word_list" :value="item.id">@{{ item.nas }}</option>
+                        <option v-for="(item,i) in word_list" :selected="!i" :value="item.id">@{{ item.nas }}</option>
                     </select>
                 </div>
             </div>
@@ -125,7 +125,7 @@
         </div>
 
     </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}?v={{ rand(999,99999) }}"></script>
 </body>
 
 </html>

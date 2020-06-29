@@ -49500,7 +49500,6 @@ var app = new Vue({
     };
   },
   mounted: function mounted() {
-    $('#words')[0].selectedIndex = 0;
     $('#ayah')[0].selectedIndex = 0;
     this.getAyas('#surah');
   },
@@ -49518,12 +49517,12 @@ var app = new Vue({
 
       var surah = $('#surah').val();
       var ayah = $('#ayah').val();
-      $('#words')[0].selectedIndex = 0;
       axios.get("api/get_ayah/".concat(surah, "/").concat(ayah)).then(function (res) {
         _this.ayah = res.data.ayah[0].ayah_text;
         _this.ayah_no = res.data.ayah[0].ayah_text_no_diacratic;
         _this.word_list = res.data.sarf;
         _this.selected_data = res.data.sarf[0];
+        $('#words')[0].selectedIndex = 0;
       });
     },
     selected: function selected(item) {
