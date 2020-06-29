@@ -1,9 +1,12 @@
+@media only screen and (max-width: 768px) {
+    body {}
+}
+
 body {
     background: #efefef69 !important;
     margin: 25px !important;
 }
 
-// @import url('https://fonts.googleapis.com/css?family=Nunito');
 // Variables
 @import 'variables';
 // Bootstrap
