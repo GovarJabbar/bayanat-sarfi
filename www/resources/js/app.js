@@ -38,7 +38,9 @@ const app = new Vue({
                     this.ayah_no = res.data.ayah[0].ayah_text_no_diacratic
                     this.word_list = res.data.sarf
                     this.selected_data = res.data.sarf[0]
-                    $('#words')[0].selectedIndex = 0;
+                    setTimeout(() => {
+                        $('#words')[0].selectedIndex = 0;
+                    }, 500);
                 })
         },
 
