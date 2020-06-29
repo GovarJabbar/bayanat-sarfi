@@ -34,7 +34,7 @@ const app = new Vue({
             let ayah = $('#ayah').val();
             $('#words')[0].selectedIndex = 0;
 
-            axios.get(`/api/get_ayah/${surah}/${ayah}`)
+            axios.get(`api/get_ayah/${surah}/${ayah}`)
                 .then((res) => {
                     this.ayah = res.data.ayah[0].ayah_text
                     this.ayah_no = res.data.ayah[0].ayah_text_no_diacratic

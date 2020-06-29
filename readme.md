@@ -21,6 +21,7 @@ $ npm install
 $ cd www
 $ npm install
 $ composer install
+$ cd ..
 $ npm start
 ```
 
