@@ -125,7 +125,7 @@
         </div>
 
     </div>
-    <script src="{{ asset('js/app.js') }}?v={{ rand(999,99999) }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
