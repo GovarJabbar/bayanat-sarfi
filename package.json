@@ -19,7 +19,7 @@
     "author": "laravelarticle",
     "license": "cc-by-4.0",
     "devDependencies": {
-        "electron": "^8.3.1",
+        "electron": "^8.5.1",
         "electron-packager": "^11.2.1"
     },
     "dependencies": {
